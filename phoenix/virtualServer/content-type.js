@@ -1,0 +1,2 @@
+if(importScripts("phoenix/virtualServer/mime-types.js"),!self.ContentType){function getMimeType(path){return lookup(path)||"application/octet-stream"}function isMedia(path){let mimeType=lookup(path);return!!mimeType&&("application/ogg"===(mimeType=mimeType.toLowerCase())||(mimeType.startsWith("audio/")||mimeType.startsWith("video/")))}function isImage(path){const mimeType=lookup(path);return!!mimeType&&mimeType.toLowerCase().startsWith("image/")}self.ContentType={isMedia:isMedia,isImage:isImage,getMimeType:getMimeType}}
+//# sourceMappingURL=content-type.js.map
